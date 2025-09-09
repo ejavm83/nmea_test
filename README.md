@@ -136,4 +136,5 @@ MIT License
 ## 🔗 관련 링크
 
 - [NMEA 0183 표준 문서](https://www.nmea.org/)
-- [GitHub 저장소](https://github.com/ejavm83/NMEAP)
+- [GitHub 저장소](https://github.com/ejavm83/nmea_test)
+- [라이브 데모](https://nmea0183parser-iy949tr08-ejavm83-2711s-projects.vercel.app)
