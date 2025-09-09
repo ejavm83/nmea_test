@@ -10,9 +10,11 @@ export default defineConfig({
       'nmea-core': resolve(__dirname, '../packages/nmea-core/src')
     }
   },
+  base: './',
   build: {
     outDir: 'dist',
     sourcemap: true,
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         manualChunks: {
