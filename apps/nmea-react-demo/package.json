@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm --prefix ../../packages/nmea-core install && npm --prefix ../../packages/nmea-core run build",
     "build": "vite build"
   }
 }
