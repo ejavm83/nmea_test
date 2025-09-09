@@ -8,7 +8,8 @@ export { listSchemaTypes };
 export type { NmeaSchema, FieldDef };
 
 export function parseNMEASentence(sentence: string) {
-  if (!sentence.startsWith("$")) throw new Error("Invalid sentence");
+  const firstChar = sentence[0];
+  if (!(firstChar === "$" || firstChar === "!")) throw new Error("Invalid sentence");
   const [body, checksum] = sentence.slice(1).split("*");
   const parts = body.split(",");
   const talker = parts[0].slice(0, 2);

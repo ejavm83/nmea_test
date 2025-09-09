@@ -12,6 +12,7 @@ export const Summary: React.FC<{
   };
   separated: {
     parsedTypes: [string, number][];
+    unknownTypes: [string, number][];
     unknownTypesLine: string;
   };
   onlyUnknown: boolean;
@@ -42,7 +43,15 @@ export const Summary: React.FC<{
         </div>
         <div className="p-3 border rounded">
           <div className="font-semibold mb-2">파싱 안되는 메시지</div>
-          <div className="text-sm">{separated.unknownTypesLine || "없음"}</div>
+          {separated.unknownTypes.length === 0 ? (
+            <div className="text-sm text-gray-600">없음</div>
+          ) : (
+            <ul className="list-disc pl-5 text-sm">
+              {separated.unknownTypes.map(([t, c]) => (
+                <li key={t}>{t} ({c})</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
 

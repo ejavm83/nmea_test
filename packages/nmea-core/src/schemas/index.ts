@@ -74,79 +74,93 @@ import { STN_SCHEMA } from "./STN";
 import { TBR_SCHEMA } from "./TBR";
 import { TBS_SCHEMA } from "./TBS";
 import { TFR_SCHEMA } from "./TFR";
+import { DCR_SCHEMA } from "./DCR";
+import { DDC_SCHEMA } from "./DDC";
+import { DLM_SCHEMA } from "./DLM";
+import { DOR_SCHEMA } from "./DOR";
+import { DPT_SCHEMA } from "./DPT";
+import { DSC_SCHEMA } from "./DSC";
+import { DSE_SCHEMA } from "./DSE";
+import { DSI_SCHEMA } from "./DSI";
+import { DSR_SCHEMA } from "./DSR";
+import { DTM_SCHEMA } from "./DTM";
+import { ECB_SCHEMA } from "./ECB";
+import { ETL_SCHEMA } from "./ETL";
+import { EVE_SCHEMA } from "./EVE";
+import { FIR_SCHEMA } from "./FIR";
+import { FSI_SCHEMA } from "./FSI";
+import { GBS_SCHEMA } from "./GBS";
+import { GEN_SCHEMA } from "./GEN";
+import { GLC_SCHEMA } from "./GLC";
+import { GLL_SCHEMA } from "./GLL";
+import { GMP_SCHEMA } from "./GMP";
+import { GNS_SCHEMA } from "./GNS";
+import { GRS_SCHEMA } from "./GRS";
+import { GST_SCHEMA } from "./GST";
+import { GSV_SCHEMA } from "./GSV";
+import { HDG_SCHEMA } from "./HDG";
+import { HDT_SCHEMA } from "./HDT";
+import { HMR_SCHEMA } from "./HMR";
+import { HMS_SCHEMA } from "./HMS";
+import { HTC_SCHEMA } from "./HTC";
+import { HTD_SCHEMA } from "./HTD";
+import { LCD_SCHEMA } from "./LCD";
+import { LR1_SCHEMA } from "./LR1";
+import { LR2_SCHEMA } from "./LR2";
+import { LR3_SCHEMA } from "./LR3";
+import { LRF_SCHEMA } from "./LRF";
+import { LRI_SCHEMA } from "./LRI";
+import { MEB_SCHEMA } from "./MEB";
+import { MLA_SCHEMA } from "./MLA";
+import { MSK_SCHEMA } from "./MSK";
+import { MSS_SCHEMA } from "./MSS";
+import { THS_SCHEMA } from "./THS";
+import { TLB_SCHEMA } from "./TLB";
+import { TLL_SCHEMA } from "./TLL";
+import { TRC_SCHEMA } from "./TRC";
+import { TSP_SCHEMA } from "./TSP";
+import { TSR_SCHEMA } from "./TSR";
+import { TTM_SCHEMA } from "./TTM";
+import { TUT_SCHEMA } from "./TUT";
+import { XTE_SCHEMA } from "./XTE";
+import { DCN_SCHEMA } from "./DCN";
+import { UID_SCHEMA } from "./UID";
+import { VBW_SCHEMA } from "./VBW";
+import { VDM_SCHEMA } from "./VDM";
+import { VDO_SCHEMA } from "./VDO";
+import { VDR_SCHEMA } from "./VDR";
+import { VER_SCHEMA } from "./VER";
+import { VHW_SCHEMA } from "./VHW";
+import { VLW_SCHEMA } from "./VLW";
+import { VPW_SCHEMA } from "./VPW";
+import { VSD_SCHEMA } from "./VSD";
+import { VSI_SCHEMA } from "./VSI";
+import { VTG_SCHEMA } from "./VTG";
+import { WAT_SCHEMA } from "./WAT";
+import { WCV_SCHEMA } from "./WCV";
+import { WNC_SCHEMA } from "./WNC";
+import { WPL_SCHEMA } from "./WPL";
+import { TXT_SCHEMA } from "./TXT";
 
-registerSchema(GGA_SCHEMA);
-registerSchema(GSA_SCHEMA);
-registerSchema(RMC_SCHEMA);
-registerSchema(AAM_SCHEMA);
-registerSchema(ABK_SCHEMA);
-registerSchema(ABM_SCHEMA);
-registerSchema(ACA_SCHEMA);
-registerSchema(ACF_SCHEMA);
-registerSchema(ACG_SCHEMA);
-registerSchema(ACK_SCHEMA);
-registerSchema(ACM_SCHEMA);
-registerSchema(ACS_SCHEMA);
-registerSchema(ADS_SCHEMA);
-registerSchema(AFB_SCHEMA);
-registerSchema(AGA_SCHEMA);
-registerSchema(AID_SCHEMA);
-registerSchema(AIR_SCHEMA);
-registerSchema(AKD_SCHEMA);
-registerSchema(ALA_SCHEMA);
-registerSchema(ALM_SCHEMA);
-registerSchema(ALR_SCHEMA);
-registerSchema(APB_SCHEMA);
-registerSchema(ASN_SCHEMA);
-registerSchema(BBM_SCHEMA);
-registerSchema(BCG_SCHEMA);
-registerSchema(BCL_SCHEMA);
-registerSchema(BEC_SCHEMA);
-registerSchema(BOD_SCHEMA);
-registerSchema(BWC_SCHEMA);
-registerSchema(BWR_SCHEMA);
-registerSchema(BWW_SCHEMA);
-registerSchema(CBR_SCHEMA);
-registerSchema(CEK_SCHEMA);
-registerSchema(COP_SCHEMA);
-registerSchema(CPC_SCHEMA);
-registerSchema(CPD_SCHEMA);
-registerSchema(CPG_SCHEMA);
-registerSchema(CPN_SCHEMA);
-registerSchema(CPR_SCHEMA);
-registerSchema(CPS_SCHEMA);
-registerSchema(CPT_SCHEMA);
-registerSchema(CUR_SCHEMA);
-registerSchema(DBT_SCHEMA);
-registerSchema(MTW_SCHEMA);
-registerSchema(MWD_SCHEMA);
-registerSchema(MWV_SCHEMA);
-registerSchema(NAK_SCHEMA);
-registerSchema(NRM_SCHEMA);
-registerSchema(NRX_SCHEMA);
-registerSchema(OSD_SCHEMA);
-registerSchema(PRC_SCHEMA);
-registerSchema(RMA_SCHEMA);
-registerSchema(RMB_SCHEMA);
-registerSchema(ROR_SCHEMA);
-registerSchema(ROT_SCHEMA);
-registerSchema(RPM_SCHEMA);
-registerSchema(RSA_SCHEMA);
-registerSchema(RSD_SCHEMA);
-registerSchema(RST_SCHEMA);
-registerSchema(RTE_SCHEMA);
-registerSchema(SFI_SCHEMA);
-registerSchema(SID_SCHEMA);
-registerSchema(XDR_SCHEMA);
-registerSchema(XTR_SCHEMA);
-registerSchema(ZDA_SCHEMA);
-registerSchema(ZDL_SCHEMA);
-registerSchema(ZFO_SCHEMA);
-registerSchema(ZTG_SCHEMA);
-registerSchema(TTD_SCHEMA);
-registerSchema(SPO_SCHEMA);
-registerSchema(SSD_SCHEMA);
-registerSchema(STN_SCHEMA);
-registerSchema(TBR_SCHEMA);
-registerSchema(TBS_SCHEMA);
-registerSchema(TFR_SCHEMA);
+const ALL_SCHEMAS = [
+  GGA_SCHEMA, GSA_SCHEMA, RMC_SCHEMA,
+  AAM_SCHEMA, ABK_SCHEMA, ABM_SCHEMA, ACA_SCHEMA, ACF_SCHEMA, ACG_SCHEMA, ACK_SCHEMA, ACM_SCHEMA, ACS_SCHEMA,
+  ADS_SCHEMA, AFB_SCHEMA, AGA_SCHEMA, AID_SCHEMA, AIR_SCHEMA, AKD_SCHEMA, ALA_SCHEMA, ALM_SCHEMA, ALR_SCHEMA,
+  APB_SCHEMA, ASN_SCHEMA, BBM_SCHEMA, BCG_SCHEMA, BCL_SCHEMA, BEC_SCHEMA, BOD_SCHEMA, BWC_SCHEMA, BWR_SCHEMA, BWW_SCHEMA,
+  CBR_SCHEMA, CEK_SCHEMA, COP_SCHEMA, CPC_SCHEMA, CPD_SCHEMA, CPG_SCHEMA, CPN_SCHEMA, CPR_SCHEMA, CPS_SCHEMA, CPT_SCHEMA,
+  CUR_SCHEMA, DBT_SCHEMA, MTW_SCHEMA, MWD_SCHEMA, MWV_SCHEMA, NAK_SCHEMA, NRM_SCHEMA, NRX_SCHEMA, OSD_SCHEMA, PRC_SCHEMA,
+  RMA_SCHEMA, RMB_SCHEMA, ROR_SCHEMA, ROT_SCHEMA, RPM_SCHEMA, RSA_SCHEMA, RSD_SCHEMA, RST_SCHEMA, RTE_SCHEMA, SFI_SCHEMA,
+  SID_SCHEMA, XDR_SCHEMA, XTR_SCHEMA, ZDA_SCHEMA, ZDL_SCHEMA, ZFO_SCHEMA, ZTG_SCHEMA, TTD_SCHEMA, SPO_SCHEMA, SSD_SCHEMA,
+  STN_SCHEMA, TBR_SCHEMA, TBS_SCHEMA, TFR_SCHEMA, DCR_SCHEMA, DDC_SCHEMA, DLM_SCHEMA, DOR_SCHEMA, DPT_SCHEMA,
+  DSC_SCHEMA, DSE_SCHEMA, DSI_SCHEMA, DSR_SCHEMA, DTM_SCHEMA, ECB_SCHEMA, ETL_SCHEMA, EVE_SCHEMA, FIR_SCHEMA, FSI_SCHEMA,
+  GBS_SCHEMA, GEN_SCHEMA, GLC_SCHEMA, GLL_SCHEMA, GMP_SCHEMA, GNS_SCHEMA, GRS_SCHEMA, GST_SCHEMA, GSV_SCHEMA,
+  HDG_SCHEMA, HDT_SCHEMA, HMR_SCHEMA, HMS_SCHEMA, HTC_SCHEMA, HTD_SCHEMA, LCD_SCHEMA, LR1_SCHEMA, LR2_SCHEMA,
+  LR3_SCHEMA, LRF_SCHEMA, LRI_SCHEMA, MEB_SCHEMA, MLA_SCHEMA, MSK_SCHEMA, MSS_SCHEMA, THS_SCHEMA, TLB_SCHEMA, TLL_SCHEMA,
+  TRC_SCHEMA, TSP_SCHEMA, TSR_SCHEMA, TTM_SCHEMA, TUT_SCHEMA, XTE_SCHEMA, DCN_SCHEMA,
+  UID_SCHEMA, VBW_SCHEMA, VDM_SCHEMA, VDO_SCHEMA, VDR_SCHEMA, VER_SCHEMA, VHW_SCHEMA, VLW_SCHEMA, VPW_SCHEMA, VSD_SCHEMA,
+  VSI_SCHEMA, VTG_SCHEMA, WAT_SCHEMA, WCV_SCHEMA, WNC_SCHEMA, WPL_SCHEMA, TXT_SCHEMA
+];
+
+for (const schema of ALL_SCHEMAS) {
+  registerSchema(schema);
+}

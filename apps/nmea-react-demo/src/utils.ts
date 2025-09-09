@@ -21,7 +21,13 @@ export const koreanKeyMap: Record<string, string> = {
   longitudeDecimal: "경도(소수)",
   mode: "모드",
   fixType: "Fix 타입",
-  satelliteIds: "위성ID"
+  satelliteIds: "위성ID",
+  // GSA 관련(일반적으로)
+  mode1: "모드(수동/자동)",
+  mode2: "해결형태(2D/3D)",
+  pdopValue: "PDOP 값",
+  hdopValue: "HDOP 값",
+  vdopValue: "VDOP 값"
 };
 
 export function toKoreanKeys(obj: any): any {
