@@ -1,0 +1,18 @@
+{
+  "builds": [
+    { 
+      "src": "nmea-react-demo/package.json", 
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "outputDirectory": "nmea-react-demo/dist",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:app",
+  "devCommand": "npm run dev"
+}
