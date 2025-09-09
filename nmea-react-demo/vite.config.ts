@@ -10,6 +10,9 @@ export default defineConfig({
       'nmea-core': resolve(__dirname, '../packages/nmea-core/src')
     }
   },
+  optimizeDeps: {
+    include: ['nmea-core']
+  },
   base: './',
   build: {
     outDir: 'dist',

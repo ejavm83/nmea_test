@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:app",
+  "buildCommand": "cd nmea-react-demo && npm install && npm run build",
   "outputDirectory": "nmea-react-demo/dist",
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
