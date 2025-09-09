@@ -1,0 +1,44 @@
+{
+  "name": "nmea0183-parser",
+  "version": "1.0.0",
+  "description": "NMEA 0183 Parser with React Demo Application",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/nmea-react-demo",
+    "build": "npm run build --workspace=packages/nmea-core && npm run build --workspace=apps/nmea-react-demo",
+    "build:core": "npm run build --workspace=packages/nmea-core",
+    "build:app": "npm run build --workspace=apps/nmea-react-demo",
+    "install:all": "npm install",
+    "clean": "npm run clean --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ejavm83/NMEAP.git"
+  },
+  "keywords": [
+    "nmea",
+    "nmea0183",
+    "parser",
+    "gps",
+    "marine",
+    "navigation",
+    "typescript",
+    "react"
+  ],
+  "author": "GMT Senior Kim Gilyong",
+  "license": "MIT"
+}
