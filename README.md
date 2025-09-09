@@ -24,13 +24,13 @@ NMEA0183Parser/
 │       │   ├── types.ts    # TypeScript 타입 정의
 │       │   └── utils.ts    # 유틸리티 함수
 │       └── dist/           # 빌드된 라이브러리
-├── apps/
-│   └── nmea-react-demo/    # React 데모 애플리케이션
-│       ├── src/
-│       │   ├── components/ # React 컴포넌트
-│       │   ├── App.tsx     # 메인 애플리케이션
-│       │   └── utils.ts    # 유틸리티 함수
-│       └── dist/           # 빌드된 웹 앱
+├── nmea-react-demo/        # React 데모 애플리케이션 (Vercel 배포 최적화)
+│   ├── src/
+│   │   ├── components/     # React 컴포넌트
+│   │   ├── App.tsx         # 메인 애플리케이션
+│   │   └── utils.ts        # 유틸리티 함수
+│   ├── dist/               # 빌드된 웹 앱
+│   └── vite.config.ts      # Vite 설정
 └── package.json            # 워크스페이스 루트 설정
 ```
 
@@ -55,7 +55,7 @@ npm install
 
 # 또는 개별 패키지 설치
 npm install --workspace=packages/nmea-core
-npm install --workspace=apps/nmea-react-demo
+npm install --workspace=nmea-react-demo
 ```
 
 ### 개발 서버 실행
@@ -64,7 +64,7 @@ npm install --workspace=apps/nmea-react-demo
 npm run dev
 
 # 또는 직접 실행
-npm run dev --workspace=apps/nmea-react-demo
+npm run dev --workspace=nmea-react-demo
 ```
 
 ### 빌드
